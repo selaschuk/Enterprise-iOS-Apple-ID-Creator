@@ -39,14 +39,14 @@
 
 --property iTunesCountryCode : "" --set for error trap set for those don't know they need to set the localisation, comment this one out when the locale is set
 
-property iTunesCountryCode : "USA"
+--property iTunesCountryCode : "USA"
 --property iTunesCountryCode : "POL"
 --property iTunesCountryCode : "GBR"
 --property iTunesCountryCode : "AUS"
 --property iTunesCountryCode : "NZL"
 --property iTunesCountryCode : "SWE"
 --property iTunesCountryCode : "FRA"
---property iTunesCountryCode : "CAN"
+property iTunesCountryCode : "CAN"
 --property iTunesCountryCode : "FJI"
 --property iTunesCountryCode : "PNG"
 --property iTunesCountryCode : "SLB"
