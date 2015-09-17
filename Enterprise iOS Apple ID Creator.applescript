@@ -974,7 +974,10 @@ on MainMagic(userDroppedFile, droppedFile)
 					--If user was successfully created...
 					
 					if scriptAction is "Continue" then
+						--Click OK on final Screen
 						
+						ClickOkOnVerify()
+					
 						--Mark user as created
 						
 						set accountStatusSetByCurrentRun to accountStatusSetByCurrentRun & ""
@@ -1582,6 +1585,25 @@ on ClickContinueOnPageOne()
 end ClickContinueOnPageOne
 
 -----------------------------------------
+
+on ClickOkOnVerify()
+	delay (masterDelay * processDelay)
+	if scriptAction is "Continue" then --This is to make sure an abort hasn't been thrown
+		--Verification text for window:
+		--get value of static text 1 of window 1 of application process "iTunes" --should be equal to "Sign In to the iTunes Store"
+		tell application "System Events"
+			try
+				click button "OK" of window 1 of application process "iTunes"
+			on error
+				set errorList to errorList & "Unable to locate and click button ''OK'' on Verify Your Apple ID window"
+			end try
+		end tell
+	end if
+end ClickOkOnVerify
+
+-----------------------------------------
+
+
 
 on AgreeToTerms()
 	delay (masterDelay * processDelay)
