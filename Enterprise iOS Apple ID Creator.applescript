@@ -971,12 +971,21 @@ on MainMagic(userDroppedFile, droppedFile)
 					
 					if scriptAction is "Abort" then exit repeat
 					
+					--Click OK on final Verification Screen
+					
+					ClickOkOnVerify()
+					
+					--Checks for errors that may have been thrown by previous handler
+					
+					CheckForErrors()
+					
+					--If an error was detected and the user chose to abort, then end the script
+					
+					if scriptAction is "Abort" then exit repeat
+					
 					--If user was successfully created...
 					
 					if scriptAction is "Continue" then
-						--Click OK on final Screen
-						
-						ClickOkOnVerify()
 					
 						--Mark user as created
 						
