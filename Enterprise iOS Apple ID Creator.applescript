@@ -1,4 +1,4 @@
-﻿--VERSION 1.2.0.16  Version history at bottom of script
+--VERSION 1.2.0.16  Version history at bottom of script
 
 
 --TO DO:
@@ -11,7 +11,7 @@
 
 
 --start localization Country Code
---Set country code to adapt script, code according to http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+--Set country code to adapt script, code according to http://en.wikipedia.org/wiki/ISO_3166-1_alp ha-3
 
 --Set iTunesCountryCode 
 
@@ -725,7 +725,7 @@ property accountStatusHeaders : {"Account Status"} --Used to keep track of what 
 
 --Supported descriptions of iTunes free button
 
-property supportedFreeButtonDescriptions : {"$0.00 Free, iBooks", "0,00 € Free, iBooks", "Free, iBooks", "£0.00 Free, iBooks", "$0.00 Get, iBooks", "0,00 € Get, iBooks", "£0.00 Get, iBooks", "Get, iBooks", "0,00 kr Get, iBooks", "USD 0.00 Get, iBooks", "€ 0,00 Get, iBooks", "₹ 0 Get, iBooks"}
+property supportedFreeButtonDescriptions : {"$0.00 Free, iBooks", "0,00 € Free, iBooks", "Free, iBooks", "£0.00 Free, iBooks", "$0.00 Get, iBooks", "0,00 € Get, iBooks", "£0.00 Get, iBooks", "Get, iBooks", "0,00 kr Get, iBooks", "USD 0.00 Get, iBooks", "€ 0,00 Get, iBooks", "₹ 0 Get, iBooks"}
 
 set userDroppedFile to false
 
